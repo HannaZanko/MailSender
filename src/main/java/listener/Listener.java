@@ -12,6 +12,14 @@ public class Listener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         System.out.println("start");
         TimerSender.sendByTimer();
+
+        try {
+            Thread.currentThread().join();
+        } catch (
+                InterruptedException e) {
+            e.printStackTrace();
+        }
+
         System.out.println("listener end");
     }
 
