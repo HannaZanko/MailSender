@@ -18,6 +18,9 @@ import java.util.List;
 import java.util.Map;
 
 public class PDFConverter {
+
+    public static final String PATH_TO_FILE = "/opt/tomcat/apache-tomcat-9.0.58/webapps/resourses/newPDF.pdf";
+
     public static void convertToPdf() {
 
 
@@ -29,7 +32,7 @@ public class PDFConverter {
                 usersMap.computeIfAbsent(el.getUserName(), k -> new ArrayList<String>()).add(el.getTimeToSpend() + "&#@" + el.getActivity());
             }
 
-            PdfWriter pdfWriter = new PdfWriter("newPDF.pdf");
+            PdfWriter pdfWriter = new PdfWriter(PATH_TO_FILE);
             float[] columnWidth = {200F, 100F, 200F};
             PdfDocument pdfDocument = new PdfDocument(pdfWriter);
             pdfDocument.addNewPage();

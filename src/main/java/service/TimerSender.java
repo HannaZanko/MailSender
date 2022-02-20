@@ -11,9 +11,9 @@ public class TimerSender {
         long day = 86_400_000L;
         //проверка времени запуска
 
-        if (Calendar.getInstance().getTime().getHours() < 21) {
-            startCalendar.set(Calendar.HOUR_OF_DAY, 20);
-            startCalendar.set(Calendar.MINUTE, 00);
+        if (Calendar.getInstance().getTime().getHours() < 15) {
+            startCalendar.set(Calendar.HOUR_OF_DAY, 15);
+            startCalendar.set(Calendar.MINUTE, 0);
             startCalendar.set(Calendar.SECOND, 0);
         } else {
             startCalendar.set(Calendar.DATE, Calendar.getInstance().getTime().getDate() + 1);

@@ -11,5 +11,5 @@
 *.ipr
 *.iws
 log/
-target/
 out/
+target/
