@@ -10,7 +10,7 @@ import java.util.Properties;
 
 public class EmailSender {
     public static void emailSender() {
-
+        System.out.println("method send email - start");
         final String fromEmail = "redteam.intensive@gmail.com";
         final String toEmail = "zankohannaandreevna@gmail.com"; // нужно будет указать email Юры
         final String password = "Andersen12";

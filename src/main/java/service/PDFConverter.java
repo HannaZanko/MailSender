@@ -23,7 +23,7 @@ public class PDFConverter {
 
     public static void convertToPdf() {
 
-
+        System.out.println("method convert to pdf - start");
         JSONConverter jsonConverter = new JSONConverter();
         try {
             List<User> list = jsonConverter.parse();
@@ -59,7 +59,7 @@ public class PDFConverter {
             }
 
             document.add(table);
-
+            System.out.println("method convert to pdf - end");
             document.close();
 
         } catch (IOException e) {

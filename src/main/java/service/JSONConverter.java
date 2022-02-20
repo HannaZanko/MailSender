@@ -14,7 +14,10 @@ import java.util.List;
 public class JSONConverter {
 
 
+
     public List<User> parse() throws IOException {
+
+        System.out.println("method parse JSON converter - start");
         List<User> listUser = new ArrayList<>();
         JSONParser jsonParser = new JSONParser();
 
@@ -37,6 +40,7 @@ public class JSONConverter {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("method parse JSON converter - end");
         return listUser;
     }
 }

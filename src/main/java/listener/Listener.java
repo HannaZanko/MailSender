@@ -12,6 +12,7 @@ public class Listener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         System.out.println("start");
         TimerSender.sendByTimer();
+        System.out.println("listener end");
     }
 
     @Override
