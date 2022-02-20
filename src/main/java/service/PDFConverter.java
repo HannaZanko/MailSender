@@ -9,7 +9,6 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import entity.User;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;

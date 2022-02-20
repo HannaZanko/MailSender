@@ -10,13 +10,13 @@ public class JsoupParser {
 
         Document doc = null;
         try {
-            doc = Jsoup.connect("https://api.coinlore.net/api/ticker/?id=90").ignoreContentType(true).
+            doc = Jsoup.connect("http://34.135.157.38:8085/tomcattest/send-json.jsp").ignoreContentType(true).
                     get();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return String.valueOf(doc.body());
+        return String.valueOf(doc.text());
 
     }
 }
