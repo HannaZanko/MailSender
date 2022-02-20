@@ -10,6 +10,8 @@ import java.util.Properties;
 
 public class EmailSender {
     public static void emailSender() {
+
+
         System.out.println("method send email - start");
         final String fromEmail = "redteam.intensive@gmail.com";
         final String toEmail = "zankohannaandreevna@gmail.com"; // нужно будет указать email Юры
@@ -40,10 +42,10 @@ public class EmailSender {
             msg.setSubject("Team RED report");
 
             Multipart email = new MimeMultipart();
-            String filename = "newPDF.pdf";
+
             MimeBodyPart pdfFile = new MimeBodyPart();
 
-            pdfFile.attachFile(filename);
+            pdfFile.attachFile(PDFConverter.PATH_TO_FILE);
 
             email.addBodyPart(pdfFile);
 

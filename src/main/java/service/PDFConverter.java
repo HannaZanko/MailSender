@@ -19,7 +19,9 @@ import java.util.Map;
 
 public class PDFConverter {
 
-    public static final String PATH_TO_FILE = "/opt/tomcat/apache-tomcat-9.0.58/webapps/resourses/newPDF.pdf";
+//    public static final String PATH_TO_FILE = "/opt/tomcat/apache-tomcat-9.0.58/webapp/resources/newPDF.pdf";
+    public static final String PATH_TO_FILE = "C:\\Users\\ANYA\\IdeaProjects\\new_project2\\src\\main\\webapp\\resources\\newPDF.pdf";
+
 
     public static void convertToPdf() {
 
